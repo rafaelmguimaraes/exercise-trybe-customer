@@ -14,7 +14,8 @@ class NavBar extends Component {
     return (
       <Menu color="blue" size="massive">
         <Container text>
-          <Menu.Item name="home" onClick={this.handleItemClick}></Menu.Item>
+          <Menu.Item name="home" onClick={this.handleItemClick} />
+          <Menu.Item name="customer" onClick={this.handleItemClick} />
           <Menu.Menu position="right">
             <Menu.Item>
               {auth.isLogged ? (
