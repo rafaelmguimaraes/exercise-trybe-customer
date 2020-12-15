@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 const INITIAL_STATE = {
   auth: {
     usersList: [
@@ -15,18 +17,32 @@ const INITIAL_STATE = {
     currentUser: {},
     isLogged: false
   },
-  customerList: [{
-    id: 11,
-    name: "Testing Name",
-    age: 99,
-    email: "testing@test.com"
-  },
-  {
-    id: 12,
-    name: "Testing Name",
-    age: 99,
-    email: "testing@test.com"
-  },]
+  customerList: [
+    {
+      id: uuidv4(),
+      name: "Ziraldo",
+      age: 60,
+      email: "ziraldog@test.com"
+    },
+    {
+      id: uuidv4(),
+      name: "Tadeu",
+      age: 30,
+      email: "tadeu@test.com"
+    },
+    {
+      id: uuidv4(),
+      name: "Filó",
+      age: 22,
+      email: "filomena@test.com"
+    },
+    {
+      id: uuidv4(),
+      name: "Aderbal",
+      age: 43,
+      email: "aderbal@test.com"
+    },
+  ],
 };
 
 export default INITIAL_STATE;
